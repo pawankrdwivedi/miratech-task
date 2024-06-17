@@ -38,7 +38,7 @@ const config: PlaywrightTestConfig = {
       name: 'Firefox',
       use: {
         browserName: 'firefox',
-        headless: false,
+        headless: true,
         viewport: { width: 1500, height: 730 },
         ignoreHTTPSErrors: true,
         acceptDownloads: true,
