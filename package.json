@@ -1,0 +1,32 @@
+{
+  "name": "playwright-typescript",
+  "version": "1.0.0",
+  "description": "Playwright Framework with Typescript for MiraTech",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:tc01": "npx playwright test test-cases/addProdToCartViaHomePageAndCheckout.test.ts --project=Firefox",
+    "test:tc02": "npx playwright test test-cases/addProductToCartViaProdDetailsPageAndCheckout.test.ts --project=Firefox",
+    "test:tc03": "npx playwright test test-cases/addRemoveProdToCartViaHomePageAndCheckout.test.ts --project=Firefox",
+    "test:tc04": "npx playwright test test-cases/addRemoveProductToCartViaProdDetailsPageAndCheckout.test.ts --project=Firefox",
+    "test:tc05": "npx playwright test test-cases/addProductToCartViaHomePageAndProdDetailsPageAndCheckout.test.ts --project=Firefox",
+    "test:parallel": "npx playwright test --grep @Smoke --project=Firefox",
+    "test:serial": "npx playwright test --grep @Smoke --workers=1 --project=Firefox",
+    "test:ui": "npx playwright test --grep @Smoke --ui",
+    "test:record": "npx playwright codegen"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Pawan Kumar Dwivedi",
+  "license": "MIT",
+  "dependencies": {
+    "@playwright/test": "^1.44.0",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-import": "^2.29.1",
+    "npm": "^10.7.0",
+    "typescript": "^5.4.5"
+  }
+}
